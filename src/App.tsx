@@ -25,7 +25,7 @@ const ShowArray = (props: IShowArray) => {
       style={{
         "--arrayLength": array.length,
         "--bgColor": bgColor
-      }}
+      } as React.CSSProperties}
     >
       {array.map((e) => (
         <div className="array-element">{e}</div>
