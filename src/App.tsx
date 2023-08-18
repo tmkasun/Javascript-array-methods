@@ -4,7 +4,7 @@
 import React from "react";
 import "./styles.css";
 
-const defaultArray = (size = 5) => {
+const defaultArray = (size = 5): any[] =>  {
   return new Array(size).fill(null).map((_, i) => i);
 };
 
@@ -70,7 +70,7 @@ const ExampleSet = (props: IExampleSet) => {
       {!isInPlace && <ShowArray array={original} />}
       <div className={`example-element ${isInPlace && "impure-operation"}`}>
         <a
-          href={`https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/${operation
+          href={`https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/${new String(operation)
             .split("(")[0]
             .replace(".", "")}`}
           target="_blank"
