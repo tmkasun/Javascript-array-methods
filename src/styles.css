@@ -12,7 +12,7 @@
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 5rem 0;
 }
 
 .array-container {
@@ -81,4 +81,25 @@ body {
   height: 2rem;
   background: orange;
   border-radius: 1rem;
+}
+
+/* Generic code */
+
+.knnect-tools{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.knnect-tool {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 14px -4px;
 }
