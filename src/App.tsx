@@ -41,7 +41,7 @@ export default function App() {
         <ExampleSet
           original={defaultArray()}
           returned={defaultArray().slice(0, 3)}
-          operation=".slice(0,2)"
+          operation=".slice(0,3)"
         />
         <ExampleSet
           original={charArray()}
